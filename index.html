@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>Kriptografi Klasik</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body class="w3-grey">
+
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-dark-grey w3-xlarge" style="max-width:3000px;margin:auto">
+     <div class="w3-padding-16 w3-left"></div>
+    <div class="w3-right w3-padding-16"></div>
+    <div class="w3-center w3-text-black w3-padding-16">Kriptografi</div>
+  </div>
+</div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-grey w3-padding-32  w3-center">
+    <img src="img/main.jpeg" class="w3-image" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Kriptografi</b></h4>
+      <h6><i>κρυπτός kryptós</i></h6>
+      <p>berasal bahasa Yunani κρυπτός kryptós, "tersembunyi, rahasia"; dan γράφειν graphein, "menulis", atau -λογία logi, "ilmu"
+      Merupakan ilmu atau seni mengamankan pesan, dan dilakukan oleh seorang cryptographer</p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <div class="w3-padding-32">
+      <h4><b>Awal mula adanya Kriptografi</b></h4>
+      <p>
+        Melihat dari hasil penemuan-penemuan, sejarah penulisan rahasia tertua dapat ditemukan pada peradaban Mesir kuno, yakni tahun 3000 SM. Bangsa Mesir menggunakan ukiran rahasia yang disebut dengan hieroglyphics untuk menyampaikan pesan kepada orang-orang yang berhak
+      </p><br>
+      <p>
+        Awal tahun 400 SM bangsa Spartan di Yunani memanfaatkan kriptografi di bidang militer dengan menggunakan alat yang disebut scytale, yakni pita panjang berbahan daun papyrus yang dibaca dengan cara digulungkan ke sebatang silinder. Sedangkan peradaban Cina dan Jepang menemukan kriptografi pada abad 15 M
+      </p>
+      <img src="img/Skytale.jpg">
+      <br>
+      <p>
+        Peradaban Islam juga menemukan kriptografi karena penguasaannya terhadap matematika, statistik, dan linguistik. Bahkan teknik kriptanalisis dipaparkan untuk pertama kalinya pada abad 9 M oleh seorang ilmuwan bernama Abu Yusuf Ya’qub ibn ‘Ishaq as-Shabbah al Kindi atau dikenal dengan Al-Kindi yang menulis kitab tentang seni memecahkan kode. Kitabnya berjudul Risalah fi Istikhraj al-Mu’amma (Manuskrip untuk memecahkan pesan-pesan Kriptografi). Terinspirasi dari perulangan huruf dalam Al-Qur’an, Al-Kindi menemukan teknik analisis frekuensi, yakni teknik untuk memecahkan ciphertext berdasarkan frekuensi kemunculan karakter pada sebuah pesan
+      </p>
+      <img src="img/Risalah fi Istikhraj al-Mu’amma.gif">
+      <br>
+      <br>
+      <h4><b>Pentingnya Kriptografi</b></h4>
+      <p>
+        berperan penting di dalam bidang keamanan informasi. Kriptografi digunakan untuk menjaga keamanan pesan atau informasi, baik informasi yang ditransmisikan melalui saluran komunikasi maupun informasi disimpan di dalam media penyimpanan.
+      </p>
+      <br>
+      <br>
+      <h4><b>Elemen dan istilah-istilah yang ada pada Kriptografi</b></h4>
+      <img src="img/elemen.png" class="w3-image w3-center">
+      <P><b>Plain Text</b> adalah text yang dapat dibaca, sedangkan teknik untuk membuat data tidak dapat dibaca disebut <b>Enkripsi</b>. Data yang telah dienkripsi disebut <b>Chipertext</b> dan teknik untuk mengembalikan <b>Chipertext</b> menjadi bentuk <b>Plaintext</b> adalah <b>Dekripsi</b></P>
+      <br>
+      <br>
+      <h4><b>CRYPTOSYSTEM</b></h4>
+      <p>
+                Cryptographic system atau cryptosystem adalah suatu fasilitas untuk mengkonversikan plaintext
+        ke ciphertext dan sebaliknya. Dalam sistem ini, seperangkat parameter yang menentukan
+        oleh satu atau beberapa kunci kriptografi.
+        transformasi pencipheran tertentu disebut suatu set kunci. Proses enkripsi dan dekripsi diatur
+      </p>
+      <div class="w3-container">
+        <h4><b>Kriptografi dapat memenuhi kebutuhan umum suatu transaksi:</b></h4>
+        <p>
+          1. Kerahasiaan (confidentiality) dijamin dengan melakukan enkripsi (penyandian).
+        </p>
+        <p>
+          2. Keutuhan (integrity) atas data-data pembayaran dilakukan dengan fungsi hash
+             satu arah.
+        </p>
+        <p>
+          3. Jaminan atas identitas dan keabsahan (authenticity) pihak-pihak yang melakukan
+              transaksi dilakukan dengan menggunakan password atau sertifikat digital.
+              Sedangkan keotentikan data transaksi dapat dilakukan 
+              <p>&nbsp;&nbsp;&nbsp;dengan tanda tangan digital.</p>
+        </p>
+        <p>
+          4. Transaksi dapat dijadikan barang bukti yang tidak bisa disangkal (non-
+              repudiation) dengan memanfaatkan tanda tangan digital dan sertifikat digital.
+        </p>
+        <br>
+        <br>
+        <h4><b>Karakteristik cryptosytem yang baik</b></h4>
+        <p>
+          1. Keamanan sistem terletak pada kerahasiaan kunci dan bukan pada kerahasiaan algoritma
+             yang digunakan.
+        </p>
+        <p>
+          2. Cryptosystem yang baik memiliki ruang kunci (keyspace) yang besar.
+        </p>
+        <p>
+          3. Cryptosystem yang baik akan menghasilkan ciphertext yang terlihat acak dalam seluruh
+             tes statistik yang dilakukan terhadapnya.
+        </p>
+        <p>
+          4. Cryptosystem yang baik mampu menahan seluruh serangan yang telah dikenal
+             sebelumnya
+        </p>
+      </div>
+      <br>
+      <h4><b>Teknik Dasar Kriptografi</b></h4>
+      <div class="w3-container">
+        <div class="w3-container">
+          <h4><b>Subtitusi</b></h4>
+          <p>Salah satu contoh teknik ini adalah Caesar cipher yang telah dicontohkan diatas. Langkah
+            pertama adalah membuat suatu tabel substitusi. Tabel substitusi dapat dibuat sesuka hati, dengan
+            catatan bahwa penerima pesan memiliki tabel yang sama untuk keperluan dekripsi. Bila tabel
+            substitusi dibuat secara acak, akan semakin sulit pemecahan ciphertext oleh orang yang tidak
+            berhak.
+          </p>
+          <img src="img/tabel_subtitusi.png" class="w3-image">
+          <p>
+            Tabel substitusi diatas dibuat secara acak. Dengan menggunakan tabel tersebut, dari plaintext &quot;5
+            teknik dasar kriptografi&quot; dihasilkan ciphertext &quot;L 7Q6DP6 KBVBM 6MPX72AMBGP&quot;. Dengan
+            menggunakan tabel substitusi yang sama secara dengan arah yang terbalik (reverse), plaintext
+            dapat diperoleh kembali dari ciphertext-nya.
+          </p>
+        </div>
+        <div class="w3-container">
+          <h4><b>Blocking</b></h4>
+          <p>
+            Sistem enkripsi terkadang membagi plaintext menjadi blok-blok yang terdiri dari beberapa
+            karakter yang kemudian dienkripsikan secara independen. Plaintext yang dienkripsikan dengan
+            menggunakan teknik blocking adalah :
+          </p>
+          <img src="img/blocking.png" class="w3-image">
+          <p>
+            Dengan menggunakan enkripsi blocking dipilih jumlah lajur dan kolom untuk penulisan pesan.
+            Jumlah lajur atau kolom menjadi kunci bagi kriptografi dengan teknik ini. Plaintext dituliskan
+            secara vertikal ke bawah berurutan pada lajur, dan dilanjutkan pada kolom berikutnya sampai
+            seluruhnya tertulis. Ciphertext-nya adalah hasil pembacaan plaintext secara horizontal berurutan
+            sesuai dengan blok-nya. Jadi ciphertext yang dihasilkan dengan teknik ini adalah &quot;5K G
+            KRTDRAEAIFKSPINAT IRO&quot;. Plaintext dapat pula ditulis secara horizontal dan ciphertextnya
+            adalah hasil pembacaan secara vertikal.
+          </p>
+        </div>
+        <div class="w3-container">
+          <h4><b>Permutasi</b></h4>
+          <p>
+            Salah satu teknik enkripsi yang terpenting adalah permutasi atau sering juga disebut transposisi.
+            Teknik ini memindahkan atau merotasikan karakter dengan aturan tertentu. Prinsipnya adalah
+            berlawanan dengan teknik substitusi. Dalam teknik substitusi, karakter berada pada posisi yang
+            tetap tapi identitasnya yang diacak. Pada teknik permutasi, identitas karakternya tetap, namun
+            posisinya yang diacak. Sebelum dilakukan permutasi, umumnya plaintext terlebih dahulu dibagi
+            menjadi blok-blok dengan panjang yang sama.
+            Untuk contoh diatas, plaintext akan dibagi menjadi blok-blok yang terdiri dari 6 karakter, dengan
+            aturan permutasi sebagai berikut :
+          </p>
+          <img src="img/permutasi_1.png" class="w3-image">
+          <p>
+            Dengan menggunakan aturan diatas, maka proses enkripsi dengan permutasi dari plaintext adalah
+            sebagai berikut :
+          </p>
+          <img src="img/permutasi_2.png" class="w3-image">
+          <p>
+            Ciphertext yang dihasilkan dengan teknik permutasi ini adalah &quot;N ETK5 SKD AIIRK
+            RAATGORP FI&quot;.
+          </p>
+        </div>
+        <div class="w3-container">
+          <h4><b>Ekspansi</b></h4>
+          <p>
+            Suatu metode sederhana untuk mengacak pesan adalah dengan memelarkan pesan itu dengan
+            aturan tertentu. Salah satu contoh penggunaan teknik ini adalah dengan meletakkan huruf
+            konsonan atau bilangan ganjil yang menjadi awal dari suatu kata di akhir kata itu dan
+            menambahkan akhiran &quot;an&quot;. Bila suatu kata dimulai dengan huruf vokal atau bilangan genap,
+            ditambahkan akhiran &quot;i&quot;. Proses enkripsi dengan cara ekspansi terhadap plaintext terjadi sebagai
+            berikut :
+          </p>
+          <img src="img/ekspansi.png" class="w3-image">
+          <p>
+            Ciphertextnya adalah &quot;5AN EKNIKTAN ASARDAN RIPTOGRAFIKAN&quot;. Aturan ekspansi
+            dapat dibuat lebih kompleks. Terkadang teknik ekspansi digabungkan dengan teknik lainnya,
+            karena teknik ini bila berdiri sendiri terlalu mudah untuk dipecahkan.
+          </p>
+        </div>
+        <div class="w3-container">
+          <h4><b>Compaction</b></h4>
+          <p>
+            Mengurangi panjang pesan atau jumlah bloknya adalah cara lain untuk menyembunyikan isi
+            pesan. Contoh sederhana ini menggunakan cara menghilangkan setiap karakter ke-tiga secara
+            berurutan. Karakter-karakter yang dihilangkan disatukan kembali dan disusulkan sebagai
+            &quot;lampiran&quot; dari pesan utama, dengan diawali oleh suatu karakter khusus, dalam contoh ini
+            digunakan &quot;&amp;&quot;. Proses yang terjadi untuk plaintext kita adalah :
+          </p>
+          <img src="img/compaction.png" class="w3-image">
+          <p>
+            Aturan penghilangan karakter dan karakter khusus yang berfungsi sebagai pemisah menjadi dasar
+            untuk proses dekripsi ciphertext menjadi plaintext kembali.
+          </p>
+          <br>
+          <p>
+            Dengan menggunakan kelima teknik dasar kriptografi diatas, dapat diciptakan kombinasi teknik
+            kriptografi yang amat banyak, dengan faktor yang membatasi semata-mata hanyalah kreativitas
+            dan imajinasi kita. Walaupun sekilas terlihat sederhana, kombinasi teknik dasar kriptografi dapat
+            menghasilkan teknik kriptografi turunan yang cukup kompleks, dan beberapa teknik dasar
+            kriptografi masih digunakan dalam teknik kriptografi modern.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-bold w3-dark-grey w3-padding" style="max-width:1200px;margin-top:100px">
+  <h2 class="w3-center"><b>Kalkulator Kriptografi Klasik</b></h2>
+  <div class="container w3-center">
+    <div class="w3-row-padding w3-padding-16 w3-center" id="metode">
+    <div class="w3-quarter">
+      <img src=""  style="width:100%">
+    </div>
+    <a href="kalkulator/playfair_calc.php"><div class="w3-quarter w3-button">
+      <img src="img/playfair.png" style="width:100%">
+      <h3>Playfair Chiper</h3>
+    </div>
+    </a>
+    <a href="kalkulator/transposition_calc.php">
+      <div class="w3-quarter w3-button">
+      <img src="img/transposition.jpg" style="width:100%">
+      <h3>Transposition Chiper</h3>
+     </div>
+     </a>
+
+    <div class="w3-quarter">
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src=""  style="width:100%">
+    </div>
+    <a href="kalkulator/vignere_calc.php">
+      <div class="w3-quarter w3-button">
+      <img src="img/vignere.png" style="width:100%">
+      <h3>Vigenere Chiper</h3>
+    </div>
+    </a>
+    <a href="kalkulator/caesar_calc.php">
+    <div class="w3-quarter w3-button">
+      <img src="img/caesar.jpg"  style="width:100%">
+      <h3>Caesar Chiper</h3>
+    </div>
+    </a>
+    <div class="w3-quarter">
+    </div>
+  <div>
+</div>
+
+  
+
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+
+  </footer>
+
+<!-- End page content -->
+</div>
+</body>
+</html>
